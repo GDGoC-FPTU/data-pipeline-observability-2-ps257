@@ -17,9 +17,9 @@ Chạy `agent_simulation.py` với 2 bộ dữ liệu và ghi lại kết quả:
 
 ---
 
-## 2. Phân tích & nhận xét
+## 2. Phan tich & nhan xet
 
-### Tại sao Agent trả lời sai khi dùng Garbage Data?
+### Tai sao Agent tra loi sai khi dung Garbage Data?
 
 Khi chạy với bộ dữ liệu "rác" (Garbage Data), kết quả của AI Agent bị sai lệch hoàn toàn là do chất lượng dữ liệu đầu vào quá kém. Đầu tiên, xuất hiện giá trị cực trị (Extreme Outlier) như "Nuclear Reactor" với giá trị $999999, khiến thuật toán tìm giá trị lớn nhất (idxmax) lựa chọn sai sản phẩm. Thứ hai, các dòng thiếu dữ liệu (Null values) và dữ liệu sai định dạng (Wrong type) cũng có thể làm cho model nhầm lẫn trong quá trình tổng hợp thông tin hoặc sinh lỗi khi convert type. Agent phụ thuộc rất lớn vào dữ liệu, "Garbage In, Garbage Out", nên khi đầu vào bị hỏng, đầu ra cũng sẽ bị hỏng theo.
 
