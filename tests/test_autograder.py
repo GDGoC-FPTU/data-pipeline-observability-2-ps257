@@ -139,7 +139,7 @@ class TestETLTransformation:
             f"Add: df['category'] = df['category'].str.title()"
         )
 
-
+ 
 # ============================================================
 # MODULE 2: Observability (20 points)
 # ============================================================
